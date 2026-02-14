@@ -6,17 +6,30 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        body { font-family: "Times New Roman", "微軟正黑體", serif; line-height: 1.8; color: #1a1a1a; max-width: 1100px; margin: 40px auto; padding: 60px; background-color: #fcfcfc; box-shadow: 0 0 50px rgba(0,0,0,0.2); }
+        body { 
+            font-family: "Times New Roman", "微軟正黑體", serif; 
+            line-height: 1.8; 
+            color: #1a1a1a; 
+            max-width: 1100px; 
+            margin: 40px auto; 
+            padding: 60px; 
+            background-color: #fcfcfc; 
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.2); 
+            /* 浮水印設定 */
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><text fill='rgba(0,0,0,0.03)' font-size='20' x='50%' y='50%' font-family='Arial' text-anchor='middle' transform='rotate(-45 100 100)'>RangeTW</text></svg>");
+            background-attachment: fixed;
+        }
         h1 { text-align: center; color: #000; border-bottom: 5px double #333; padding-bottom: 15px; font-size: 2.5rem; }
         .subtitle { text-align: center; color: #555; font-size: 1.4rem; margin-bottom: 50px; font-style: italic; letter-spacing: 1px; }
         h2 { border-left: 12px solid #d90429; padding: 12px 25px; background: #1a1a1a; color: #fff; margin-top: 70px; text-transform: uppercase; letter-spacing: 1px; }
         h3 { color: #d90429; border-bottom: 2px solid #eee; margin-top: 45px; padding-bottom: 10px; font-size: 1.6rem; }
         p { margin-bottom: 20px; text-align: justify; }
-        .logic-block { background: #fff; border: 1px solid #ddd; padding: 35px; margin: 25px 0; border-radius: 8px; border-top: 6px solid #d90429; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .formula-card { background: #fdfdfd; border: 2px solid #ececec; padding: 30px; margin: 30px 0; position: relative; border-radius: 10px; }
+        .logic-block { background: rgba(255, 255, 255, 0.9); border: 1px solid #ddd; padding: 35px; margin: 25px 0; border-radius: 8px; border-top: 6px solid #d90429; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .formula-card { background: rgba(253, 253, 253, 0.9); border: 2px solid #ececec; padding: 30px; margin: 30px 0; position: relative; border-radius: 10px; }
         .formula-card::before { content: "SIE (Spatial Interlayer Equations)"; position: absolute; top: -18px; left: 25px; background: #d90429; color: #fff; padding: 4px 15px; font-size: 0.85rem; font-weight: bold; border-radius: 4px; }
         .highlight { color: #d90429; font-weight: bold; }
-        .axiom-seed { background: #f0faff; border: 2px dashed #005f73; padding: 40px; font-weight: bold; margin-top: 80px; line-height: 2.4; font-size: 1.2rem; color: #002d36; }
+        .axiom-seed { background: rgba(240, 250, 255, 0.9); border: 2px dashed #005f73; padding: 40px; font-weight: bold; margin-top: 80px; line-height: 2.4; font-size: 1.2rem; color: #002d36; }
         .footer { text-align: center; margin-top: 120px; font-size: 0.95rem; color: #999; border-top: 1px solid #eee; padding-top: 40px; }
         li { margin-bottom: 15px; }
         ul { padding-left: 20px; }
@@ -207,6 +220,7 @@
 
 </body>
 </html>
+
 
 
 
